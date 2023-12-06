@@ -1,0 +1,11 @@
+.sub-header {
+  background: rgb(14, 14, 14);
+
+
+  height: 150px;
+  margin: 0 0 120px 0;
+
+  @include maxMobile {
+    margin: 0 0 70px 0;
+  }
+}

@@ -1,0 +1,14 @@
+mixin portfolio-item(name, img, url, type, category)
+  div.portfolio-item(class="filtr-item" data-category=category data-sort="value")
+    div.portfolio-item__content
+        a.portfolio-item__overlay-link(href="#" target="_blank") 
+        div.portfolio-item__img-wrapper
+            img.portfolio-item__img(src=img, alt="Portfolio Item")
+        div.portfolio-item__overlay
+            h6.portfolio-item__title=name 
+            div.portfolio-item__type=type
+            a.portfolio-item__link(href=url target="_blank") View 
+              span 
+              span 
+              span 
+              span 

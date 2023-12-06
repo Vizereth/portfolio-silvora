@@ -1,0 +1,113 @@
+.portfolio-item {
+  flex: 1 1 33%;
+  max-width: 33%;
+  padding: 10px;
+
+  &__content {
+    position: relative;
+  }
+
+  &:hover {
+    img {
+      filter: blur(2px);
+      opacity: 0.25;
+    }
+
+    .portfolio-item__overlay {
+      height: 100%;
+    }
+  }
+
+  @include maxTablet {
+    &:hover {
+      img {
+        filter: none;
+      }
+
+      .portfolio-item__overlay {
+        height: 0;
+      }
+    }
+  }
+
+  @include maxMobile {
+    flex: 1 1 50%;
+    max-width: 50%;
+  }
+
+  @include maxMobileSmall {
+    flex: 1 0 100%;
+    max-width: 100%;
+  }
+
+  &__img-wrapper {
+    border: 1px solid rgb(75, 75, 75);
+
+    img {
+      width: 100%;
+      height: auto;
+
+      transition: all $transition;
+      filter: grayscale(75%);
+    }
+  }
+
+  &__overlay {
+    overflow: hidden;
+    background-color: rgba(15, 15, 15, 0.75);
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    z-index: 5;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    transition: height $transition;
+
+    color: $white;
+
+    @include maxTablet {
+      display: none;
+    }
+  }
+
+  &__title {
+    font-size: 1.8vw;
+    font-weight: 700;
+
+    @include maxTablet {
+      font-size: rem(1.5vw);
+    }
+  }
+
+  &__type {
+    font-size: 0.9vw;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  &__link {
+    @include common-btn($white, 2px);
+    font-size: rem(14);
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 10px 30px;
+  }
+
+  &__overlay-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: transparent;
+  }
+}

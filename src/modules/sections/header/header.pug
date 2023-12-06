@@ -1,0 +1,55 @@
+header.header(id="header-section")
+  div.header__navbar-mobile
+    div.header__navbar-mobile-row(class="header__navbar-mobile-row--1")
+      div.header__logo-mobile
+        include ../../common/logo/logo.pug
+      div.header__nav-mobile-toggle
+        button(type="button" class="header__nav-mobile-toggle icon-menu")
+          span
+    div.header__navbar-mobile-row(class="header__navbar-mobile-row--2")
+      nav.header__nav-mobile
+        ul.header__nav-mobile-list
+          li.header__nav-mobile-list-item 
+            a.header__nav-mobile-link(href="#about-section") About me
+          li.header__nav-mobile-list-item 
+            a.header__nav-mobile-link(href="#skills-section") Skills
+          li.header__nav-mobile-list-item 
+            a.header__nav-mobile-link(href="#portfolio-section") Portfolio
+          li.header__nav-mobile-list-item 
+            a.header__nav-mobile-link(class="header__nav-mobile-link--contact" href="#contact-section") Contact me
+  div.header__container
+    div.header__navbar
+      div.header__logo
+        include ../../common/logo/logo.pug
+      nav.header__nav
+        ul.header__nav-list
+          li.header__nav-list-item 
+            a.header__nav-link(href="#about-section") About me
+          li.header__nav-list-item 
+            a.header__nav-link(href="#skills-section") Skills
+          li.header__nav-list-item 
+            a.header__nav-link(href="#portfolio-section") Portfolio
+          li.header__nav-list-item 
+            a.header__nav-link(class="header__nav-link--contact" href="#contact-section") Contact me
+    div.header__content
+      div.header__column(class="header__column--1")
+        div.header__info-bg-rectangle 
+        div.header__info
+          div.header__info-text
+            h2.header__greeting Hi, I am
+            h1.header__name Vladislav Iskakov
+            div.header__job Front-end Developer / Awesome dude
+          div.header__social
+            ul.header__social-list 
+              li.header__social-list-item
+                a.header__social-link(href="#") 
+                  i(class="fa-solid fa-paper-plane")
+              li.header__social-list-item
+                a.header__social-link(href="#") 
+                  i(class="fa-brands fa-github")
+              li.header__social-list-item
+                a.header__social-link(href="#") 
+                  i(class="fa-brands fa-linkedin-in")
+      div.header__column(class="header__column--2")
+        img.header__img(src="img/header/kirito.png", alt="My photo")
+

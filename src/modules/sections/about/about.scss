@@ -1,0 +1,125 @@
+.about {
+  margin: 0 0 120px 0;
+
+  @include maxMobile {
+    margin: 0 0 100px 0;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+
+    @include maxMobile {
+      gap: 60px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+
+    color: $black;
+
+    @include maxMobile {
+      gap: 40px;
+    }
+  }
+
+  &__text {
+    width: 60%;
+
+    color: $black-1;
+    font-family: $fontFamilyOpenSans;
+    font-size: rem(15);
+    font-weight: 400;
+    line-height: math.div(20, 15);
+    text-align: justify;
+
+    @include maxMobile {
+      min-width: 265px;
+
+      font-size: rem(14);
+      font-weight: 300;
+    }
+  }
+
+  &__explore {
+    font-size: rem(15);
+    font-weight: 600;
+    line-height: math.div(18, 15);
+    text-transform: uppercase;
+
+    border-left: 2px solid $black;
+    border-right: 2px solid $black;
+
+    padding: 7px 25px;
+
+    @include maxMobile {
+      font-size: rem(13);
+      font-weight: 700;
+
+      border-left: 3px solid $black;
+      border-right: 3px solid $black;
+    }
+  }
+
+  &__services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+
+    @include maxMobile {
+      flex-direction: column;
+      gap: 40px;
+      padding: 0 30px;
+    }
+  }
+
+  &__service {
+    position: relative;
+    max-width: 500px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__service-img {
+    position: absolute;
+    top: -20%;
+    left: -40px;
+    height: auto;
+    width: 60px;
+  }
+
+  &__service-title {
+    display: inline;
+
+    font-size: rem(22);
+    font-weight: 700;
+    line-height: math.div(27, 22);
+    letter-spacing: 18%;
+
+    @include maxMobile {
+      font-size: rem(17);
+    }
+  }
+
+  &__service-text {
+    font-family: $fontFamilyOpenSans;
+    font-size: rem(14);
+    font-weight: 300;
+    line-height: math.div(19, 14);
+
+    @include maxMobile {
+      font-size: rem(13);
+      text-align: justify;
+    }
+  }
+}

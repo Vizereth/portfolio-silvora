@@ -1,0 +1,26 @@
+//- Connect mixins
+include ../../common/section-title/section-title.pug
+
+section.contact(id="contact-section")
+    div.contact__container
+        div.contact__content 
+            +section-title("Contact")
+            div.contact__text Connect with me via the enchanted form below or send a magical owl. Let's chat about your digital wonders!
+            include ../../common/separator/separator.pug
+        form.contact__form(action="POST")
+            label.contact__label
+                input.contact__input(class="contact__input--name" type="text" placeholder="ENTER YOUR NAME*" required)
+            label.contact__label
+                input.contact__input(class="contact__input--email" placeholder="ENTER YOUR EMAIL*" type="text" required)
+            label.contact__label
+                input.contact__input(class="contact__input--phone" placeholder="PHONE NUMBER*" type="text")
+            div.contact__textarea-wrapper
+                textarea.contact__textarea(maxlength="300" placeholder="ENTER YOUR MESSAGE*" required)
+                div.contact__textarea-count
+                    div.contact__textarea-count-current 0
+                    div.contact__textarea-count-max &nbsp;/&nbsp;300
+            button.contact__submit(type="submit") SUBMIT
+                span
+                span
+                span
+                span

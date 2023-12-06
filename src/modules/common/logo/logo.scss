@@ -1,0 +1,11 @@
+.logo {
+  img {
+    height: 60px;
+    width: auto;
+
+    @include maxMobile {
+      height: 40px;
+      filter: invert(100%);
+    }
+  }
+}

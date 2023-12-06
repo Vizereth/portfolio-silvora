@@ -1,0 +1,59 @@
+//- Connect mixins
+include ../../common/section-title/section-title.pug
+include ../../common/portfolio-item/portfolio-item.pug
+
+-
+    var portfolio = [
+        {
+            name: "PROJECT NAME",
+            img: "img/portfolio/img.jpg",
+            url: "#",
+            type: "HTML/CSS",
+            category: 1
+        },
+        {
+            name: "PROJECT NAME",
+            img: "img/portfolio/img.jpg",
+            url: "#",
+            type: "HTML/CSS",
+            category: 1
+        },        
+        {
+            name: "PROJECT NAME",
+            img: "img/portfolio/img.jpg",
+            url: "#",
+            type: "Javascript",
+            category: 2
+        },        
+        {
+            name: "PROJECT NAME",
+            img: "img/portfolio/img.jpg",
+            url: "#",
+            type: "Javascript",
+            category: 2
+        },        
+        {
+            name: "PROJECT NAME",
+            img: "img/portfolio/img.jpg",
+            url: "#",
+            type: "React",
+            category: 3
+        }]
+
+section.portfolio(id="portfolio-section")
+    div.portfolio__header
+        +section-title("Portfolio")
+    div.portfolio__content
+        div.portfolio__filter
+            ul.portfolio__filter-list
+                li.portfolio__filter-btn(class="portfolio__filter-btn--active" data-filter="all") All
+                li.portfolio__filter-btn(data-filter="1") HTML/CSS
+                li.portfolio__filter-btn(data-filter="2") JavaScript
+                li.portfolio__filter-btn(data-filter="3") React
+        div.portfolio__items-wrapper 
+            div.portfolio__items(class="filter-container")
+                each item in portfolio
+                    +portfolio-item(item.name, item.img, item.url, item.type, item.category)
+        div.portfolio__footer
+            div.portfolio__footer-text And many more to come!
+
