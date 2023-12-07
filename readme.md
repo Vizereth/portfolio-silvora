@@ -1,4 +1,4 @@
-# Portfolio Template - Graphite
+# Portfolio Template - Silvora
 
 ## Deploy
 
