@@ -11157,9 +11157,22 @@ This will be applied to all elements with class *__container. E.g. header__conta
   font-size: 1.5rem;
 }
 
+.header__img-wrapper {
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  border: 2px solid rgba(44, 44, 44, 0.548);
+  overflow: hidden;
+  padding: 35px 0 0 0;
+}
+
 .header__img {
-  max-width: 500px;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: grayscale(25%);
+          filter: grayscale(25%);
 }
 
 /* ================= Mobile Menu Toggle ================= */
@@ -11974,7 +11987,7 @@ This will be applied to all elements with class *__container. E.g. header__conta
             align-items: center;
   }
 
-  .header__img {
+  .header__img-wrapper {
     display: none;
   }
 }
