@@ -2,7 +2,7 @@
 
 ## Deploy
 
-https://sophrona.github.io/Q-Silvora
+https://vizereth.github.io/Q-Silvora
 
 ## Project setup
 ```
