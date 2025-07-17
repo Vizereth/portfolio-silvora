@@ -2,7 +2,7 @@
 
 ## Deploy
 
-https://vizereth.github.io/Q-Silvora
+https://vizereth.github.io/portfolio-silvora
 
 ## Project setup
 ```
