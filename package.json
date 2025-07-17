@@ -1,5 +1,5 @@
 {
-	"homepage": "https://vizereth.github.io/Q-Silvora",
+	"homepage": "https://vizereth.github.io/portfolio-silvora",
 	"name": "fls-start",
 	"version": "3.0.0",
 	"description": "Start template with Gulp and Webpack",
@@ -13,7 +13,7 @@
 		"sprite": "gulp sprite",
 		"fonts": "gulp fonts --rewrite",
 		"deploy": "gulp deployFTP --build",
-		"deploygh": "gulp deploygh",
+		"deploygh": "gulp deployGH",
 		"zip": "gulp deployZIP --build",
 		"devbuild": "gulp build --build --nowebp",
 		"tmp": "gulp -f gulpfile.tmp.js",
@@ -76,6 +76,7 @@
 		"webpack-stream": "latest"
 	},
 	"dependencies": {
+		"gh-pages": "^6.3.0",
 		"scroll-js": "^3.5.0",
 		"simplebar": "latest"
 	}
